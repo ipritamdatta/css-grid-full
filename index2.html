@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script type="text/javascript"></script>
+    <style>
+      .wrapper {
+        display: grid;
+        /* grid-template-columns: 1fr 2fr 1fr; */
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1em;
+        /* grid-auto-rows: 100px; */
+        grid-auto-rows: minmax(100px, auto);
+      }
+      .wrapper > div {
+        background-color: #eee;
+        padding: 1em;
+      }
+      .wrapper > div:nth-child(odd) {
+        background-color: #ddd;
+      }
+      .nested {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 70px;
+        grid-gap: 1em;
+      }
+      .nested > div {
+        border: #ccc 1px solid;
+        padding: 1em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div>
+        Lorem ipsum dolor sit amet.
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur,
+        aut odio itaque vitae minima at iure recusandae in id soluta, quis culpa
+        iusto! Ex voluptas odio facilis non? Provident vitae architecto placeat
+        inventore, sed similique nostrum itaque voluptas cumque vero.
+      </div>
+      <div class="nested">
+        <div>
+          Lorem
+        </div>
+        <div>
+          Lorem
+        </div>
+        <div>
+          Lorem
+        </div>
+        <div>
+          Lorem
+        </div>
+        <div>
+          Lorem
+        </div>
+        <div>
+          Lorem
+        </div>
+        <div>
+          Lorem
+        </div>
+        <div>
+          Lorem
+        </div>
+        <div>
+          Lorem
+        </div>
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet.
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet.
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet.
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet.
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet.
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet.
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet.
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet.
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
